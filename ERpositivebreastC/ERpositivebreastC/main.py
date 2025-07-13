@@ -1,11 +1,3 @@
-import streamlit as st
-import pandas as pd
-import numpy as np
-import plotly.express as px
-import plotly.graph_objects as go
-from PIL import Image
-import json
-import datetime
 from io import BytesIO
 import base64
 import streamlit as st
@@ -14,10 +6,11 @@ from er_statistics_dashboard import add_statistics_to_main_app
 # Optional: configure Streamlit app
 st.set_page_config(page_title="My Main App", layout="wide")
 
-# 👉 Create sidebar
-st.sidebar.title("📚 Main Navigation")
+# Add sidebar toggle to show ER+ dashboard
+add_statistics_to_main_app()
 
-# 📊 Add ER+ dashboard button + metrics
+# Your original app logic continues below...
+
 add_statistics_to_main_app()
 
 
