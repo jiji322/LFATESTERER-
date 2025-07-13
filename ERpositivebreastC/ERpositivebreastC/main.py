@@ -11,11 +11,6 @@ add_statistics_to_main_app()
 
 # Your app logic continues...
 
-# Your original app logic continues below...
-
-add_statistics_to_main_app()
-
-
 # Try to import OpenCV with fallback
 try:
     import cv2
@@ -24,11 +19,15 @@ except ImportError:
     CV2_AVAILABLE = False
     print("⚠️ OpenCV not available. Using PIL-based color analysis.")
     cv2 = None
+
+# Try to import ReportLab
 try:
     from reportlab.pdfgen import canvas
     from reportlab.lib.pagesizes import letter
     REPORTLAB_AVAILABLE = True
 except ImportError:
+    REPORTLAB_AVAILABLE = False
+
     REPORTLAB_AVAILABLE = False
     print("Warning: reportlab not available. PDF generation will be disabled.")
 import tempfile
