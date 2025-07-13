@@ -9,6 +9,8 @@ st.set_page_config(page_title="My Main App", layout="wide")
 # Add sidebar toggle to show ER+ dashboard
 add_statistics_to_main_app()
 
+# Your app logic continues...
+
 # Your original app logic continues below...
 
 add_statistics_to_main_app()
