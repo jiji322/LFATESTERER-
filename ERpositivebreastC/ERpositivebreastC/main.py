@@ -11,7 +11,7 @@ add_statistics_to_main_app()
 
 # Your app logic continues...
 
-    import cv2
+import cv2
     CV2_AVAILABLE = True
 except ImportError:
     CV2_AVAILABLE = False
