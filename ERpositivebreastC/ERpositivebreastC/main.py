@@ -1,7 +1,7 @@
 from io import BytesIO
 import base64
 import streamlit as st
-from er_statistics_dashboard import add_statistics_to_main_app
+from er_statistics_dashboard import add_statistics_to_main_app  # Line 4
 
 # Optional: configure Streamlit app
 st.set_page_config(page_title="My Main App", layout="wide")
@@ -11,8 +11,6 @@ add_statistics_to_main_app()
 
 # Your app logic continues...
 
-# Try to import OpenCV with fallback
-try:
     import cv2
     CV2_AVAILABLE = True
 except ImportError:
